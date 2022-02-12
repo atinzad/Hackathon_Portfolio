@@ -4,7 +4,8 @@ import Footer from "./Footer";
 import Intro from "./Intro";
 import Port from "./Port";
 import "../home.css";
-// abdullah
+import "../about.css";
+
 function Home() {
   return (
     <div>
