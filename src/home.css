@@ -1,0 +1,7 @@
+.anna-img {
+  display: block;
+  margin: auto;
+  padding: 50px;
+  object-fit: cover;
+  width: 400px;
+}
