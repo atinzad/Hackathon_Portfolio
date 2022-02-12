@@ -1,20 +1,22 @@
 import "./App.css";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
-import TripsList from "./components/TripsList";
-import TripDetail from "./components/TripDetail";
 import { Routes, Route } from "react-router";
+import About from "./components/About";
+import PortDetail from "./components/PortDetail";
 
 function App() {
   return (
     <div id="page-top">
       <Nav />
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/TripList" element={<TripsList />}></Route>
-        {/* slug is the data will be given by the user. in our case it's from the data file. */}
-        <Route path="/detail/:slug" element={<TripDetail />}></Route>
-      </Routes>
+      <About />
+      <div className="auto-scroll">
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/port/:slug" element={<PortDetail />}></Route>
+        </Routes>
+      </div>
     </div>
   );
 }

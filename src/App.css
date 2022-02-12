@@ -11876,3 +11876,6 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+.auto-scroll {
+  overflow: auto;
+}

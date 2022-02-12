@@ -1,4 +1,8 @@
 import React from "react";
+import Customer from "./Customer";
+import Footer from "./Footer";
+import Intro from "./Intro";
+import Port from "./Port";
 // abdullah
 function Home() {
   return (
@@ -11,32 +15,19 @@ function Home() {
         </div>
       </header>
       <div>
-        <footer className="footer">footer</footer>
+        <Intro />
+      </div>
+      <div>
+        <Port />
+      </div>
+      <div>
+        <Customer />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
 }
 
 export default Home;
-
-{
-  /* <div class="divider-custom divider-light">
-          {/* <div class="divider-custom-line"></div> */
-}
-{
-  /* <div class="divider-custom-icon">
-            <i class="fas fa-star"></i>
-          </div>
-          <div class="divider-custom-line"></div>
-        </div> */
-}
-{
-}
-{
-  /* */
-}
-{
-  /* <p class="masthead-subheading font-weight-light mb-0">
-          a delightful way to explore nature with friends and family
-        </p> */
-}
